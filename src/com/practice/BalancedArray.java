@@ -52,25 +52,26 @@ public class BalancedArray extends Test{
     }
 
     public static void main(String[] args) throws Exception{
+        BalancedArray ob = new BalancedArray();
         int[] test1 = {1,2,-1,-2};
-        test("test1" , new BalancedArray().isBalanced(test1), 1);
+        test("test1" , ob.isBalanced(test1), 1);
 
         int[] test2 =  {-2, 3, 2, -3};
-        test("test2" , new BalancedArray().isBalanced(test2), 1);
+        test("test2" , ob.isBalanced(test2), 1);
 
         int[] test3 =  {-2, 2, 2, 2};
-        test("test3" , new BalancedArray().isBalanced(test3), 1);
+        test("test3" , ob.isBalanced(test3), 1);
 
         int[] test4 =  {-5, 2, -2};
-        test("test4" , new BalancedArray().isBalanced(test4), 0);
+        test("test4" , ob.isBalanced(test4), 0);
 
         int[] test5 =  {-5, 2};
-        test("test5" , new BalancedArray().isBalanced(test5), 0);
+        test("test5" , ob.isBalanced(test5), 0);
 
         int[] test6 =  {2, 2};
-        test("test6" , new BalancedArray().isBalanced(test6), 0);
+        test("test6" , ob.isBalanced(test6), 0);
 
         int[] test7 =  {2};
-        test("test7" , new BalancedArray().isBalanced(test7), 0);
+        test("test7" , ob.isBalanced(test7), 0);
     }
 }
