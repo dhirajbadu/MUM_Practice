@@ -16,7 +16,7 @@ public class EvenSubset extends Test{
             return 0;
         }
 
-        for(int i = 2; i < m ; i=i+2){
+       /* for(int i = 2; i < m ; i=i+2){
             int fm = (m/i);
             if(fm * i == m){
                int f = n/i;
@@ -25,6 +25,10 @@ public class EvenSubset extends Test{
                    return 0;
                }
             }
+        }*/
+
+        for(int i = 2; i< m; i = i+2) {
+            if(m % i == 0 && n % i  != 0) return 0;
         }
 
         return isEvenSubset;
