@@ -12,7 +12,7 @@ public class EvenSubset extends Test{
     public int isEvenSubset(int m, int n){
         int isEvenSubset = 1;
 
-        if(m == 0 || m == 1){
+        if(m == 0 || m == 1 || m%2 != 0 || n%2 !=0){
             return 0;
         }
 
@@ -47,7 +47,7 @@ public class EvenSubset extends Test{
 
         int test4m = 15;
         int test4n = 10;
-        test("test4" , ob.isEvenSubset(test4m, test4n), 1);
+        test("test4" , ob.isEvenSubset(test4m, test4n), 0);
 
         int test5m = 50;
         int test5n = 100;
